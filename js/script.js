@@ -1,16 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const signInWrapper = document.querySelector(".sign-in__wrapper");
+    const signInModal = document.querySelector(".sign-in");
     const signInButton = document.querySelector(".header__sign-in-btn");
     const closeSignInFormBtn = document.querySelector(".sign-in__close");
 
-    signInButton.onclick = () => signInWrapper.style.display = "block";
-    closeSignInFormBtn.onclick = () => signInWrapper.style.display = "none";
+    signInButton.onclick = function () {
+        signInModal.classList.add('modal_active');
+    };
+    closeSignInFormBtn.onclick = function () {
+        signInModal.classList.remove('modal_active');
+    };
 
-    const signUpWrapper = document.querySelector(".sign-up__wrapper");
+    const signUpModal = document.querySelector(".sign-up");
     const signUpButton = document.querySelector(".header__sign-up-btn");
     const closeSignUpFormBtn = document.querySelector(".sign-up__close");
 
-    signUpButton.onclick = () => signUpWrapper.style.display = "block";
-    closeSignUpFormBtn.onclick = () => signUpWrapper.style.display = "none";
-})
+    signUpButton.onclick = function () {
+        signUpModal.classList.add('modal_active');
+    };
+    closeSignUpFormBtn.onclick = function () {
+        signUpModal.classList.remove('modal_active');
+    };
+
+});
