@@ -27,6 +27,14 @@ body {
     font-weight: bold;
 }
 
+.input:valid {
+    background-color: #ddffdd;
+}
+
+.input:invalid {
+    background-color: #ffdddd;
+}
+
 .btn {
     border: none;
     border-radius: 10px;
