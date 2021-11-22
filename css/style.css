@@ -181,6 +181,7 @@ body {
 
 .card {
     transition: all 0.3s linear;
+    width: 300px;
 }
 
 .card:hover {
