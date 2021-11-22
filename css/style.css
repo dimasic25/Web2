@@ -152,10 +152,12 @@ body {
 
 .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 25px;
     flex-wrap: wrap;
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+    align-items: baseline;
 }
 
 .card {
@@ -186,16 +188,29 @@ body {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 25px;
-    color: rgb(79, 102, 106);
+    background-color: rgb(79, 102, 106);
+    height: 50px;
+    column-gap: 20px;
 }
 
-.messengers {
+.footer__author {
+    transition: all 0.2s linear;
+}
+
+.footer__author:hover {
+    color: rgb(255, 76, 91);
+}
+
+.footer__messengers {
     display: flex;
     column-gap: 10px;
 }
 
-.messengers * {
+.footer__messengers * {
     object-fit: cover;
     width: 30px;
     height: 30px;
