@@ -106,7 +106,7 @@ body {
 }
 
 
-.sign-in__btn, .sign-up__btn {
+.form__sign-in__btn, .form__sign-up__btn {
     margin-bottom: 10px;
 }
 
@@ -148,4 +148,55 @@ body {
 
 .header__sign-up-btn {
     margin-left: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    transition: all 0.3s linear;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.card__photo {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.card__info * {
+    color: rgb(255, 76, 91);
+    transition: all 0.2s linear;
+}
+
+.footer {
+    margin-top: 25px;
+    color: rgb(79, 102, 106);
+}
+
+.messengers {
+    display: flex;
+    column-gap: 10px;
+}
+
+.messengers * {
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
 }
