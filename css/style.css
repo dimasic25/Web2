@@ -236,3 +236,21 @@ body {
     width: 30px;
     height: 30px;
 }
+
+@media screen and (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .header__title {
+        margin: 0 auto;
+    }
+
+    .header__buttons {
+        margin: 0 auto 10px;
+    }
+}
+
